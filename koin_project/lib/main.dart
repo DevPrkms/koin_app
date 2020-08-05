@@ -1,12 +1,13 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
-import 'package:koin_project/homeScreen.dart';
+import 'package:koin_project/HomeScreen.dart';
 
 void main() {
   runApp(new MaterialApp(
     home: new SplashScreen(),
     routes: <String, WidgetBuilder>{
-     '/HomeScreen': (BuildContext) => new HomeScreen()
+      '/HomeScreen': (BuildContext) => new HomeScreen()
     },
   ));
 }
@@ -35,6 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+      backgroundColor: Color(0xff7f8fa6),
       body: new Center(
         child: new Image.asset('images/coin.png'),
       ),
