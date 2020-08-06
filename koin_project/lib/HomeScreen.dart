@@ -12,6 +12,8 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: Color(0xff7f8fa6),
       body: Container(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
