@@ -32,12 +32,12 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ) ??
         false;
-  }
+  } // 메인에서 뒤로가기 눌렀을 때 종료 alert 출력
 
   @override
   Widget build(BuildContext context) {
     return new WillPopScope(
-      onWillPop: _onBackPressed,
+      onWillPop: _onBackPressed, // 메인에서 뒤로가기 눌렀을 때 이벤트
       child: Scaffold(
         backgroundColor: Color(0xff7f8fa6),
         body: Container(
@@ -48,11 +48,12 @@ class _HomeScreenState extends State<HomeScreen> {
               children: <Widget>[
                 Expanded(
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center, // 주축 기준 가운데 정렬
                     children: <Widget>[
                       new Image.asset('images/coin.png'),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        mainAxisAlignment:
+                            MainAxisAlignment.spaceEvenly, // 요소들 margin 일정하게
                         children: <Widget>[
                           RaisedButton(
                             child: Text('로그인'),
